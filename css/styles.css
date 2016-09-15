@@ -1,0 +1,17 @@
+﻿.h1, .h2, .h3, h1, h2, h3 {
+    margin-bottom:20px;
+    margin-top:10px;
+}
+p {
+    margin:0 0 10px;
+}
+#content {
+    margin-top:70px;
+}
+.start-bootstrap {
+    font-size:22px;
+}
+.by {
+    font-size:22px;
+}
+

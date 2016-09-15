@@ -1,0 +1,245 @@
+﻿
+body{
+    position:relative;
+    margin:0px;
+    font-family:sans-serif;
+}
+
+/*#region Home page */
+
+#imgHomepage {
+    background-image: url(../images/cobweb.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    margin: 0px;
+  
+}
+
+h1 {
+    margin-top: 120px;
+    padding: 0px;
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+    font-weight: bold;
+    font-size: 6em;
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: white;
+    font-family: David;
+}
+
+/*#endregion */
+
+/*#region Round Button */
+
+#double-down {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.btn-circle {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding: 3px 0;
+    font-size: 30px;
+    line-height: 2.00;
+    border-radius: 30px;
+    border: 2px solid white;
+    color: white;
+}
+
+    .btn-circle:hover {
+        color: white;
+    }
+    .btn-circle:visited{
+        color:white;
+    }
+
+#go-down:hover {
+    animation-duration: .8s;
+    animation-name: changeSize;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes changeSize {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+    }
+    /*#endregion */
+
+/*#region Navbar
+*/
+
+.mynav {
+    padding-top: 5px; 
+    padding-bottom:5px;   
+    background-color: black;    
+    border-bottom: 1px solid grey;
+    transition:1s;
+
+}
+.navbar-default{
+    padding-top: 25px;
+    padding-bottom:25px;   
+    background-color:inherit;
+    border:0px;
+    transition:1s;
+}
+
+ul li {
+    float: right;
+    background-color: inherit;
+}
+    ul li a {
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    ul li:hover{
+       
+    }
+
+        ul li a:hover {
+            color: lightgrey;
+            background-color: inherit !important;
+        }
+   
+
+#nav-header {
+    float: left;
+    }
+
+#nav-header a:hover{
+    color:white;
+}
+
+/*#endregion */
+
+/*#region About Section */
+
+#aboutSection {
+    background-color: black;
+    height: 650px;
+    color: white;
+    padding-top: 250px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+
+/*#endregion */
+
+/*#region Download section */
+
+#img {
+    background-image: url("../images/greypic.jpg");
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+   
+}
+.blackBg{
+    background-color:black;
+    height:200px;
+}
+/*#endregion */
+
+/*#region Contact section */
+
+#contactSection {
+    background-color: black;
+    height: 750px;
+    color: white;
+    padding-top: 120px;
+    text-align: center;
+    line-height: 30px;
+   
+}
+
+
+/*#endregion */
+
+/*#region Map */
+
+#map iframe {
+    width: 100%;
+    height: 350px;
+}
+
+/*#endregion */
+
+/*#region Footer */
+
+#footer {
+    background-color: black;
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+
+/*#endregion */
+
+/*#region Links, Headers, Paragraphs and Buttons */
+
+.myHref {
+    color: #66ffcc;
+    font-size: 22px;
+}
+
+    .myHref:hover {
+        color: #00b377;
+        text-decoration: none;
+        transition:0.3s;
+    }
+
+.paragraphs {
+    font-size: 22px;
+    font-family: David;
+    word-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.headers {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    color: #66ffcc;
+    border: 1px solid #66ffcc;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+    .buttons:hover {
+        text-decoration: none;
+        background-color: #66ffcc;
+        color: #003300;
+        transition:1s;
+    }
+
+/*#endregion */
+
+

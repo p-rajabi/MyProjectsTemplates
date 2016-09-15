@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="js/google.js"></script>
+    <link href="css/Grayscale.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--*********************************************************************************
+    Home Page Content-->
+   <div class="container-fluid" id="imgHomepage">
+
+    <!--**********************************************
+    Navbar-->
+       
+       <nav class="navbar navbar-default navbar-fixed-top" >
+           <div class="container">        
+               <ul class="nav">
+                   <li><a href="#aboutSection" data-name="aboutSection" class="links">ABOUT</a></li>
+                   <li><a href="#downloadSection" data-name="downloadSection" class="links">DOWNLOAD</a></li>
+                   <li><a href="#contactSection" data-name="contactSection" class="links">CONTACT</a></li>
+                   <li id="nav-header"><a href="#imgHomepage" data-name="imgHomepage" class="links"><i class="fa fa-play-circle "></i> START BOOTSTRAP</a></li>
+               </ul>
+           </div>
+       </nav>
+
+          
+               <div class="col-sm-12">
+                   <div class="row">
+                       <h1>GRATSCALE</h1>
+
+                   </div>
+                   <div class="row">
+                       <h2>
+                           A free, responsive, one page Bootstrap theme.<br />
+                           Created by Start Bootstrap.
+                       </h2>
+                   </div>
+                   <div class="row" id="double-down">
+                       <a href="#aboutSection" data-name="aboutSection" class="btn btn-circle btn-secondary links " id="myclick"><b><i id="go-down" class="fa fa-angle-double-down"></i></b></a>
+
+                   </div>
+               </div>
+          
+       
+       </div>
+
+    <!--*********************************************************************************
+    About section-->
+       <div class="container-fluid" id="aboutSection">
+           <div class="row">
+               <h2 class="col-sm-12 headers" >
+                   ABOUT GRAYSCALE
+               </h2>
+               <p class="col-sm-12 paragraphs">
+                   Grayscale is a free Bootstrap 3 theme created by Start Bootstrap.
+                    It can be yours<br /> right now, simply download the template on <a class="myHref" href="#">the preview page</a>. The theme is<br />
+                    open source, and you can use it for any purpose, personal or commercial.<br /><br />
+
+                   This theme features stock photos by <a class="myHref" href="#">Gratisography</a> along with a custom Google<br />
+                   Maps skin courtesy of <a class="myHref" href="#">Snazzy Maps</a>.<br /><br />
+
+                   Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS<br />
+                   files for easy customization.
+               </p>
+           </div>
+       </div>
+
+    <!--*********************************************************************************
+    Download section-->
+    <div class="container-fluid" id="downloadSection">
+        <div class="row">
+            <div class=" blackBg"></div>
+            <div  id="img">
+                <h2 class="col-sm-12 headers">
+                    DOWNLOAD GRAYSCALE
+                </h2>
+                <p class="col-sm-12 paragraphs">
+                    You can download Grayscale for free onthe preview page at Start Bootstrap.
+                </p>
+
+                <a href="#" class="buttons">VISIT DOWNLOAD PAGE</a>
+
+            </div>
+            <div class=" blackBg"></div>
+        </div>
+    </div>
+
+    <!--*********************************************************************************
+    Contact section-->
+    <div class="container-fluid" id="contactSection">
+        <div class="row">
+            <h2 class="col-sm-12 headers">
+                CONTACT START BOOTSTRAP
+            </h2>
+            <p class="col-sm-12 paragraphs">
+               Feel free to email us to provide some feedback on our templates, give us <br />
+                suggestions for new templates and themes, or to just say hello!
+            </p>
+            <a style="margin-bottom:50px;" class="col-sm-12 myHref" href="#">feedback@startbootstrap.com</a>
+                        
+            <a class="buttons" href="#"><i class="fa fa-twitter"></i> TWITTER</a>
+            <a class="buttons" href="#"><i class="fa fa-github"></i> GITHUB</a>
+            <a class="buttons" href="#"><i class="fa fa-google-plus"></i> GOOGLE+</a>
+
+        </div>
+    </div>
+
+
+    <!--*********************************************************************************
+    Map section-->
+    <div class="container-fluid">
+        <div class="row">
+            <div id="map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12480.024463005955!2d-121.43451049999999!3d38.556672899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ada9b477715cf%3A0x2ba00da74d6f5938!2s5770+T+St%2C+Sacramento%2C+CA+95817!5e0!3m2!1sen!2sus!4v1470274261546"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                
+            </div>
+        </div>
+    </div>
+
+    <!--*********************************************************************************
+    Footer-->
+    <div class="container-fluid" id="footer">
+        <div class="row">
+            <p class="paragraphs">
+                Copyright <i class="fa fa-copyright"> </i>Your Website 2016
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+        $(document).ready(function () {             
+
+
+   //******************************************************************
+            //click links and circle button
+
+
+        $(".links").click(function () {
+            event.preventDefault();
+            var type = $(this).data("name");
+            $('body').animate({
+                scrollTop: $("#" + type).offset().top
+            }, 1000)
+        });
+
+   //******************************************************************
+  //navbar color
+            sia
+        var lastScrollTop = 0;
+
+        $(window).scroll(function (event) {
+            event.preventDefault();
+
+            var st = $(this).scrollTop();
+            if (st > lastScrollTop) {
+                $("nav").removeClass("navbar-default")
+                $("nav").addClass("mynav");                
+            } 
+            if (st == 0) {                
+                $("nav").addClass("navbar-default");                
+            }
+            lastScrollTop = st;
+        });
+
+    });
+</script>

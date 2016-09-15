@@ -1,0 +1,104 @@
+﻿body {
+    
+    background-image:url(../images/bg.jpg);
+    background-size:cover;
+    -webkit-background-size:cover;
+    -o-background-size:cover;
+    -moz-background-size:cover;
+    background-attachment:fixed;
+}
+h1, h2, h3, h4, h5, h5, h6 {
+    font-family:'Open Sans',sans-serif;
+}
+h1 {
+    font-size:60px;
+    color:white;
+    
+}
+h4 {
+    color:white;
+}
+.welcome {
+    color:grey; 
+    padding-top:20px;
+    color:grey;
+
+}
+
+#header {
+    text-align:center
+}
+.navbar-inverse {
+    background-color:white;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align:center;
+}
+.navbar-nav {
+    float:none;
+}
+.mydiv {
+  
+    background-color: rgba(255,255,255,0.9);
+    text-align:center;
+    padding-bottom:20px;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;     
+}
+
+hr {
+    width:400px;
+    border-top:1px solid black;
+}
+.footer-header {
+    color:black;
+}
+.item {
+    height:500px;
+}
+#small-pic {
+    float:left;
+    width:150px;
+    height:150px;
+    margin-right:20px;
+}
+.paragraph {
+    font-size:20px;
+    text-align:left;
+}
+    
+.navbar-inverse {
+   text-align:center;
+    background-color: rgba(255,255,255,0.9);
+    
+}
+#myfooter {
+    background-color: rgba(255,255,255,0.9);
+    text-align:center;
+    padding-bottom:30px;
+    padding-top:30px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:0px;   
+}
+.nav li {
+    display:inline-block;
+}
+.navbar-inverse .navbar-nav > li > a {
+    font-size:20px;
+   
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color:black;
+}
+
+@media (min-width:768px) {
+    .navbar-nav > li {
+        float:none;
+    }
+} 
