@@ -1,7 +1,7 @@
 ﻿(function () {
     var app = angular.module("githubviewer", []);
 
-    var MainController = function ($scope, $http, $interval, $log) {
+    var MainController = function ($scope, $http, $interval, $log ,$location, $anchorScroll ) {
 
         //******************************************
         //when loaded data
@@ -17,6 +17,8 @@
 
         var onRepos = function (response) {
             $scope.repos = response.data;
+            $location.hash("userDetails");
+            $anchorSchroll();
         }
 
         //******************************************
