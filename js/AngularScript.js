@@ -23,11 +23,9 @@
                 $scope.search($scope.username);
             }
         };
-        // too Changes hameye taghiraat ro neshoon mide behet ... 
-        // bad ye message barash type mikoni va committesh mikoni... 
+        
 
-        // hala k commit kardim .. baas befrestish roo server (gitHub) ba "sync"
-        // in dafe Push erro daad .. nemidoonam chera.. vali usually it just works
+
         var startCountDown = function () {
             $interval(decrementCountDown, 1000, $scope.CountDown);
         }
