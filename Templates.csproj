@@ -97,6 +97,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Angular.html" />
     <Content Include="BusinessCasual.html" />
     <Content Include="Content\bootstrap\mixins\_vendor-prefixes.scss" />
     <Content Include="Content\bootstrap\mixins\_text-overflow.scss" />
@@ -169,6 +170,14 @@
     <Content Include="Content\bootstrap\_badges.scss" />
     <Content Include="Content\bootstrap\_alerts.scss" />
     <Content Include="Content\_bootstrap.scss" />
+    <Content Include="css\wrapbootstrap.css" />
+    <Content Include="js\angular.js" />
+    <Content Include="js\AngularScript.js" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="AngularUserDetails.html" />
+    <Content Include="wrapbootstrap.html" />
     <None Include="css\animation.scss" />
     <Content Include="css\animation.css">
       <DependentUpon>animation.scss</DependentUpon>
@@ -351,6 +360,7 @@
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.eot" />
     <Content Include="css\mixins.scss" />
+    <Content Include="Scripts\angular.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

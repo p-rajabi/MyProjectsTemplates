@@ -109,23 +109,22 @@ ul li {
         font-size: 15px;
         font-weight: bold;
     }
-    ul li:hover{
-       
-    }
-
+  
         ul li a:hover {
             color: lightgrey;
             background-color: inherit !important;
         }
-   
+     
 
 #nav-header {
     float: left;
     }
 
 #nav-header a:hover{
-    color:white;
+    color:lightgrey;
+    
 }
+
 
 /*#endregion */
 

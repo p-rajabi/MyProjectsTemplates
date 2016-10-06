@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/wrapbootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="fill">
+        <div class="container" id="frame">     
+                
+                    <a class="col-sm-3" id="mark" href="#"><h3>{wrap} bootstrap</h3></a>              
+               
+                    <a class="col-sm-6" id="des" href="#"><h3>Velocity | Designed for Products</h3></a>
+                            
+            <div class="col-sm-3">
+                <a class="btn btn-remove" href="#" id="remove-frame" type="button" value="remove this frame">Remove this frame<i class="fa-angle-double-right"></i></a>
+            </div>
+           
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $('.btn-remove').click(function () {
+            $('.fill').hide();
+        });
+    });
+</script>
