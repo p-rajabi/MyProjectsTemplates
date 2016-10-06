@@ -98,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Angular.html" />
+    <Content Include="js\app.js" />
     <Content Include="BusinessCasual.html" />
     <Content Include="Content\bootstrap\mixins\_vendor-prefixes.scss" />
     <Content Include="Content\bootstrap\mixins\_text-overflow.scss" />
@@ -171,9 +172,12 @@
     <Content Include="Content\bootstrap\_alerts.scss" />
     <Content Include="Content\_bootstrap.scss" />
     <Content Include="css\wrapbootstrap.css" />
+    <Content Include="js\angular-route.js" />
     <Content Include="js\angular.js" />
-    <Content Include="js\AngularScript.js" />
+    <Content Include="js\MainController.js" />
     <Content Include="js\Github.js" />
+    <Content Include="js\UserController.js" />
+    <Content Include="main.html" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
@@ -237,7 +241,7 @@
     <Content Include="js\google.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\second.js" />
-    <Content Include="main.html" />
+    <Content Include="emptyTemp.html" />
     <Content Include="MovingAnimate.html" />
     <Content Include="office-images\homework2.jpg" />
     <Content Include="office-images\homework3.jpg" />

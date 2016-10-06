@@ -1,7 +1,7 @@
 ﻿(function () {
-    var app = angular.module("githubviewer", []);
+    var app = angular.module("githubviewer");
 
-    var MainController = function ($scope, github, $interval, $log ,$location, $anchorScroll ) {
+    var MainController = function ($scope, github, $interval, $log, $location, $anchorScroll) {
 
         //******************************************
         //when loaded data
@@ -43,7 +43,7 @@
         var countDownInterval = null;
 
         var startCountDown = function () {
-           countDownInterval= $interval(decrementCountDown, 1000, $scope.CountDown);
+            countDownInterval = $interval(decrementCountDown, 1000, $scope.CountDown);
         }
 
         //******************************************
@@ -56,14 +56,14 @@
             //*******************************************
             //Stop counting down if user searched something
 
-            if (countDownInterval){
+            if (countDownInterval) {
                 $interval.cancel(countDownInterval);
                 $scope.CountDown = null;
             }
         };
-        
 
-        $scope.username="angular"
+
+        $scope.username = "angular"
         $scope.message = "GitHub viewer";
         $scope.reposortorder = "-stargazers_count";
         $scope.CountDown = 5;
@@ -71,5 +71,5 @@
     }
 
     app.controller("MainController", MainController);
-    
+
 }());
