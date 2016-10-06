@@ -173,6 +173,7 @@
     <Content Include="css\wrapbootstrap.css" />
     <Content Include="js\angular.js" />
     <Content Include="js\AngularScript.js" />
+    <Content Include="js\Github.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />

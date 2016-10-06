@@ -1,22 +1,21 @@
 ﻿(function () {
     var app = angular.module("githubviewer", []);
 
-    var MainController = function ($scope, $http, $interval, $log ,$location, $anchorScroll ) {
+    var MainController = function ($scope, github, $interval, $log ,$location, $anchorScroll ) {
 
         //******************************************
         //when loaded data
 
-        var onUserComplete = function (response) {
-            $scope.user = response.data;
-            $http.get($scope.user.repos_url)
-                 .then(onRepos, onError);
+        var onUserComplete = function (data) {
+            $scope.user = data;
+            github.getrepos($scope.user).then(onRepos, onError);
         }
 
         //******************************************
         //Repository data
 
-        var onRepos = function (response) {
-            $scope.repos = response.data;
+        var onRepos = function (data) {
+            $scope.repos = data;
             $location.hash("userDetails");
             $anchorSchroll();
         }
@@ -52,8 +51,7 @@
 
         $scope.search = function (username) {
             $log.info("Searching for " + username);
-            $http.get("http://api.github.com/users/" +username)
-             .then(onUserComplete, onError);
+            github.getuser(username).then(onUserComplete, onError);
 
             //*******************************************
             //Stop counting down if user searched something
