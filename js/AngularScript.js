@@ -24,16 +24,20 @@
             }
         };
         
-
+        var countDownInterval = null;
 
         var startCountDown = function () {
-            $interval(decrementCountDown, 1000, $scope.CountDown);
+           countDownInterval= $interval(decrementCountDown, 1000, $scope.CountDown);
         }
 
         $scope.search = function (username) {
             $log.info("Searching for " + username);
             $http.get("http://api.github.com/users/" +username)
              .then(onUserComplete, onError);
+            if (countDownInterval){
+                $interval.cancel(countDownInterval);
+                $scope.CountDown = null;
+            }
         };
         
 
@@ -45,5 +49,5 @@
     }
 
     app.controller("MainController", MainController);
-
+    
 }());
