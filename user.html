@@ -1,12 +1,7 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-  
-</head>
-<body>
-    <div  id="userDetails">
-        <h2>{{user.name | uppercase}}</h2>
+﻿
+    <div >
+        <h2>{{user.name}}</h2>
+        {{error}}
         <img ng-src="http://www.gravatar.com/avatar/{{user.gravatar_id}}" title="{{user.name}}" />
         Order:
 
@@ -34,5 +29,4 @@
             </tr>
         </tbody>
     </table>
-</body>
-</html>
+<a href="#/main">Back to the search</a>
