@@ -1,5 +1,5 @@
 ﻿
-
+(function(){
 var createworker = function () {
     
     var workcount = 0;
@@ -33,3 +33,4 @@ worker.job1();
 worker.job1();
 
 
+}());
