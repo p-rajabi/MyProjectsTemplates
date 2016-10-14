@@ -1,19 +1,25 @@
 ﻿
-var MainController = function ($scope, $http) {
+(function () {
 
-    var onUserComplete = function (response) {
-        $scope.user = response.data;
-    }
+    var app = angular.module("githubView", []);
 
-    var onError = function (reason) {
-        $scope.error = "can't find data";
-    }
+    var MainController = function ($scope, $http) {
 
-    $http.get("http://api.github.com/users/odetocode")
-         .then(onUserComplete, onError)
-   
-}
+        var onUserComplete = function (response) {
+            $scope.user = response.data;
+        };
 
-   
+        var onError = function (reason) {
+            $scope.error = "can't find data";
+        };
+
+        $http.get("http://api.github.com/users/odetocode")
+             .then(onUserComplete, onError)
+
+    };
+
+    app.controller("MainController", MainController);
+
+    }()); 
 
 
