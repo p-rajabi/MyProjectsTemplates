@@ -1,4 +1,17 @@
 ﻿
 var MainController = function ($scope) {
-    $scope.message = "Hello, Angular";
+
+    var person = {
+        firstName: "Pouneh",
+        lastName: "Rajabimehr",
+        imageSrc: "http://nationtrendz.com/wp-content/uploads/2015/03/small-baby-girl-mermaid-dress.jpg"
+        
+    }
+
+    $scope.message = "Hello Angular";
+    $scope.person = person;
 }
+
+   
+
+

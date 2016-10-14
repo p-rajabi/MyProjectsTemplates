@@ -9,7 +9,11 @@
 </head>
 <body ng-controller="MainController">
    <h1>{{message}}</h1>
-    <h2>{{message.length}}</h2>
+   <div>
+       <div>first name: {{person.firstName}}</div>
+       <div>last name:{{person.lastName}}</div>
+       <div><img ng-src="{{person.imageSrc}}" title="{{person.firstName}} {{person.lastName}}"/></div>
+   </div>
 </body>
 
 </html>
