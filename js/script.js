@@ -1,15 +1,17 @@
 ﻿
-var MainController = function ($scope) {
+var MainController = function ($scope, $http) {
 
-    var person = {
-        firstName: "Pouneh",
-        lastName: "Rajabimehr",
-        imageSrc: "http://nationtrendz.com/wp-content/uploads/2015/03/small-baby-girl-mermaid-dress.jpg"
-        
+    var onUserComplete = function (response) {
+        $scope.user = response.data;
     }
 
-    $scope.message = "Hello Angular";
-    $scope.person = person;
+    var onError = function (reason) {
+        $scope.error = "can't find data";
+    }
+
+    $http.get("http://api.github.com/users/odetocode")
+         .then(onUserComplete, onError)
+   
 }
 
    
