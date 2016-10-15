@@ -179,6 +179,7 @@
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="user.html" />
+    <Content Include="userdetails.html" />
     <Content Include="wrapbootstrap.html" />
     <None Include="css\animation.scss" />
     <Content Include="css\animation.css">
