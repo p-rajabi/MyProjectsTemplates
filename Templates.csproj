@@ -173,13 +173,15 @@
     <Content Include="css\wrapbootstrap.css" />
     <Content Include="js\angular-route.js" />
     <Content Include="js\angular.js" />
+    <Content Include="js\app.js" />
     <Content Include="js\github.js" />
-    <Content Include="js\script.js" />
+    <Content Include="js\MainController.js" />
+    <Content Include="main.html" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="js\userController.js" />
     <Content Include="user.html" />
-    <Content Include="userdetails.html" />
     <Content Include="wrapbootstrap.html" />
     <None Include="css\animation.scss" />
     <Content Include="css\animation.css">
